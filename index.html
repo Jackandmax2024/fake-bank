@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lumen Audio Mesh</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="aurora"></div>
+    <main class="app-shell">
+      <header class="hero">
+        <h1>Lumen Audio Mesh</h1>
+        <p>
+          A shimmering sound world: midnight-blue skin, electric-cyan tides, and
+          violet memory pulses.
+        </p>
+      </header>
+
+      <section class="grid">
+        <article class="card library" data-ripple>
+          <h2>Living Library</h2>
+          <p>
+            Animated song tiles ripple on touch, like music stretching awake.
+          </p>
+          <div class="tile-row">
+            <button class="tile">Moonlit Drift</button>
+            <button class="tile">Violet Rain</button>
+            <button class="tile">Cyan Wake</button>
+          </div>
+        </article>
+
+        <article class="card swarm">
+          <h2>Lantern Swarm</h2>
+          <p>
+            Devices become glowing lanterns that trade song fragments through
+            quiet paths while the route engine picks the brightest lane.
+          </p>
+          <div id="lanternField" aria-hidden="true"></div>
+        </article>
+
+        <article class="card forge" data-ripple>
+          <h2>Forge Room</h2>
+          <p>
+            Upload music and watch it break into drifting shards that float to
+            peers like fireflies carrying sound.
+          </p>
+          <label class="upload-btn">
+            <input type="file" id="trackInput" accept="audio/*" />
+            Cast a Track
+          </label>
+          <p id="forgeStatus">No track in the forge yet.</p>
+        </article>
+
+        <article class="card offline" data-ripple>
+          <h2>Offline Chamber</h2>
+          <p>
+            Tracks settle into glassy crystals for anywhere playback, then sync
+            back as a silent choir when you reconnect.
+          </p>
+          <button id="syncButton">Simulate Reconnect</button>
+          <p id="syncStatus">Mesh resting in local crystal mode.</p>
+        </article>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
